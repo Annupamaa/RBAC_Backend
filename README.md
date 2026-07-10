@@ -15,6 +15,7 @@ A backend application built using **Node.js**, **Express.js**, and **MongoDB** t
 - Morgan
 - Helmet
 - CORS
+- Swagger (swagger-ui-express, swagger-jsdoc)
 
 ---
 
@@ -368,3 +369,47 @@ updatedAt
 - Maximum 3 invalid OTP attempts.
 - JWT required for protected APIs.
 - Role-based authorization for every protected API.
+
+## Swagger API Documentation
+
+After starting the project, Swagger API documentation will be available at:
+
+```text
+http://localhost:8000/api-docs
+```
+
+Open the above URL in your browser to:
+
+- View all available APIs
+- Read request and response schemas
+- Test APIs directly from the browser
+- Authenticate using the **Authorize** button with a JWT token
+
+### How to Use
+
+1. Start the server:
+
+```bash
+npm install
+npm run dev
+```
+
+2. Open Swagger in your browser:
+
+```text
+http://localhost:8000/api-docs
+```
+
+3. Generate a JWT by calling:
+   - `POST /api/auth/send-otp`
+   - `POST /api/auth/verify-otp`
+
+4. Click the **Authorize** button in Swagger.
+
+5. Enter your JWT in the following format:
+
+```text
+Bearer <your_jwt_token>
+```
+
+6. You can now test all protected APIs directly from the Swagger UI.

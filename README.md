@@ -368,4 +368,3 @@ updatedAt
 - Maximum 3 invalid OTP attempts.
 - JWT required for protected APIs.
 - Role-based authorization for every protected API.
-# RBAC_Backend

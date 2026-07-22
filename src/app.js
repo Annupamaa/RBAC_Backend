@@ -23,6 +23,14 @@ const authRoutes = require("./routes/authRoutes");
 const protectedRoutes = require("./routes/protectedRoutes");
 const userRoutes = require("./routes/userRoutes");
 const logRoutes = require("./routes/logRoutes");
+const errorHandler = require("./middleware/errorHandler");
+
+// Routes
+app.use("/api/auth", authRoutes);
+app.use("/api/users", userRoutes);
+app.use("/api/assets", assetRoutes);
+
+app.use(errorHandler);
 
 app.get("/", (req, res) => {
     res.json({

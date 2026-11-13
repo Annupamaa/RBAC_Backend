@@ -1,6 +1,6 @@
-# RBAC Backend Assignment
+# Secure Auth & RBAC API
 
-A backend application built using **Node.js**, **Express.js**, and **MongoDB** that implements **OTP-based Authentication**, **JWT Authentication**, **Role-Based Access Control (RBAC)**, and **Activity Logging**.
+A production-style backend built with Node.js, Express.js and MongoDB that implements OTP-based login, JWT authentication, Role-Based Access Control (RBAC) and activity logging, with full Swagger documentation.
 
 ---
 
